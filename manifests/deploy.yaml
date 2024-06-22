@@ -56,7 +56,6 @@ spec:
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
-            path: /
             port: http
         name: tuya-prometheus-exporter
         ports:
@@ -65,7 +64,6 @@ spec:
           protocol: TCP
         readinessProbe:
           httpGet:
-            path: /
             port: http
         volumeMounts:
         - mountPath: /config.yaml
