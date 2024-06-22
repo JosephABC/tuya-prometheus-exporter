@@ -1,0 +1,10 @@
+devices:
+  - name: pi-plug
+    id: xxxxxxxxxxxxxxxxxxx
+    key: "xxxxxxxx"
+    ip: 192.xx.xx.xx
+
+logging:
+  level: INFO
+
+scrapeInterval: 10
