@@ -23,7 +23,7 @@ metadata:
   name: tuya-prometheus-exporter
 spec:
   ports:
-  - name: metrics
+  - name: http
     port: 9090
     protocol: TCP
     targetPort: http
@@ -87,7 +87,7 @@ metadata:
 spec:
   endpoints:
   - interval: 10s
-    port: metrics
+    port: http
   selector:
     matchLabels:
       app.kubernetes.io/instance: tuya-prometheus-exporter
