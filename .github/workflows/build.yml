@@ -29,5 +29,4 @@ jobs:
       - name: Build and push ARM64 Docker image
         run: |
           LOWERCASE_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-          docker buildx build --platform linux/arm64,linux/amd64 -t ghcr.io/$LOWERCASE_OWNER/tuya-prometheus-exporter:${{ env.DOCKER_IMAGE_TAG }} .
-          docker push ghcr.io/$LOWERCASE_OWNER/tuya-prometheus-exporter:${{ env.DOCKER_IMAGE_TAG }}
+          docker buildx build --platform linux/arm64,linux/amd64 -t ghcr.io/$LOWERCASE_OWNER/tuya-prometheus-exporter:${{ env.DOCKER_IMAGE_TAG }} . --push
