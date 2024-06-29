@@ -52,7 +52,7 @@ spec:
         app.kubernetes.io/name: tuya-prometheus-exporter
     spec:
       containers:
-      - image: ghcr.io/josephabc/tuya-prometheus-exporter:v0.0.4
+      - image: ghcr.io/josephangbc/tuya-prometheus-exporter:v0.0.4
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
